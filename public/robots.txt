@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://townywatersolutions.netlify.app/sitemap.xml

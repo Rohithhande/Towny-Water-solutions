@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Geometric crystal/folded panel shape -->
+  <g transform="translate(200, 155)">
+    <!-- Leftmost tall panel -->
+    <polygon points="-65,-110 -20,-130 -20,30 -65,50" fill="#c8d8ef" opacity="0.7"/>
+    <!-- Left mid panel -->
+    <polygon points="-35,-120 15,-140 15,20 -35,40" fill="#b0c8e8" opacity="0.65"/>
+    <!-- Center panel (tallest, slightly right) -->
+    <polygon points="0,-135 50,-120 50,45 0,25" fill="#99b5d8" opacity="0.7"/>
+    <!-- Right panel -->
+    <polygon points="30,-115 75,-95 75,65 30,40" fill="#8aaad0" opacity="0.75"/>
+    <!-- Back right tall panel -->
+    <polygon points="55,-105 90,-85 90,75 55,50" fill="#7a9ec5" opacity="0.6"/>
+    <!-- Bottom hexagonal face -->
+    <polygon points="-65,50 -20,30 15,20 50,45 75,65 30,40 0,25 -35,40" fill="#9ab4d0" opacity="0.25"/>
+  </g>
+
+  <!-- TOWNY WATER text -->
+  <text x="200" y="240" text-anchor="middle" font-family="'Outfit','Inter','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="38" fill="#0f172a" letter-spacing="1.5">TOWNY WATER</text>
+  
+  <!-- SOLUTIONS text (bolder, larger) -->
+  <text x="200" y="285" text-anchor="middle" font-family="'Outfit','Inter','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="48" fill="#0f172a" letter-spacing="2">SOLUTIONS</text>
+
+  <!-- Tagline -->
+  <text x="200" y="330" text-anchor="middle" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="13" fill="#64748b" letter-spacing="2.5">EARLY DETECTION, MAXIMUM PROTECTION</text>
+</svg>

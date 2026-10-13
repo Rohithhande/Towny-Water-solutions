@@ -1,0 +1,156 @@
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: all var(--transition-smooth);
+}
+
+.scrolled {
+    background: var(--bg-glass);
+    backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: var(--shadow-sm);
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Desktop Nav */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link {
+    position: relative;
+    font-family: var(--font-family);
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: color var(--transition-fast);
+    padding: 0.3rem 0;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+    transition: width var(--transition-smooth);
+}
+
+.link:hover {
+    color: var(--text-primary);
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.whatsappLink {
+    font-family: var(--font-family);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #25d366;
+    transition: opacity var(--transition-fast);
+}
+
+.whatsappLink:hover {
+    opacity: 0.75;
+}
+
+.cta {
+    font-family: var(--font-family);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.6rem 1.4rem;
+    border-radius: var(--radius-full);
+    background: var(--gradient-primary);
+    color: #fff;
+    transition: transform var(--transition-spring), box-shadow var(--transition-fast);
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    z-index: 1001;
+    padding: 0.25rem;
+}
+
+.backdrop {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100dvh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        background: var(--bg-glass);
+        backdrop-filter: blur(30px) saturate(180%);
+        border-left: 1px solid var(--border-subtle);
+        box-shadow: var(--shadow-xl);
+        transform: translateX(100%);
+        transition: transform var(--transition-smooth);
+        z-index: 999;
+    }
+
+    .navOpen {
+        transform: translateX(0);
+    }
+
+    .link {
+        font-size: 1.15rem;
+        color: var(--text-primary);
+    }
+
+    .cta {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .backdrop {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(4px);
+        z-index: 998;
+    }
+}

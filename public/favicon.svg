@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Compact icon-only version for browser tab -->
+  <g transform="translate(32, 30)">
+    <polygon points="-13,-22 -4,-26 -4,6 -13,10" fill="#c8d8ef" opacity="0.7"/>
+    <polygon points="-7,-24 3,-28 3,4 -7,8" fill="#b0c8e8" opacity="0.65"/>
+    <polygon points="0,-27 10,-24 10,9 0,5" fill="#99b5d8" opacity="0.7"/>
+    <polygon points="6,-23 15,-19 15,13 6,8" fill="#8aaad0" opacity="0.75"/>
+    <polygon points="11,-21 18,-17 18,15 11,10" fill="#7a9ec5" opacity="0.6"/>
+  </g>
+</svg>

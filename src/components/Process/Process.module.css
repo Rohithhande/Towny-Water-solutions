@@ -1,0 +1,100 @@
+.section {
+    padding: 6rem 0;
+    background: var(--bg-secondary);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    max-width: 550px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.step {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition-spring), box-shadow var(--transition-smooth);
+}
+
+.step:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stepImage {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.stepImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+    filter: brightness(1.25) contrast(1.1);
+}
+
+.step:hover .stepImage img {
+    transform: scale(1.06);
+    filter: brightness(1.35) contrast(1.15);
+}
+
+.numBadge {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    font-family: var(--font-family);
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #fff;
+    background: var(--gradient-primary);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+}
+
+.body {
+    padding: 1.5rem 1.5rem 2rem;
+}
+
+.body h3 {
+    font-family: var(--font-family);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.body p {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
